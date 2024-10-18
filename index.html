@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slipper Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .slipper {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .slipper img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .slipper h2 {
+            text-align: center;
+        }
+        .buy-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Slipper Shop</h1>
+    </header>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+        <a href="#more">more</a>
+    </div>
+    <div class="container">
+        <center>
+        <div id="home" class="section">
+            <h2>Welcome to Slipper Shop</h2>
+            <p>Your one-stop destination for the coziest and stylish slippers!</p>
+        </div>
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>At Slipper Shop, we believe that comfort should never be compromised. Our slippers are designed with both style and comfort in mind.</p>
+            </center>
+        </div>
+        <div id="shop" class="section">
+            <div class="slipper">
+                <h2>Comfy Slippers</h2>
+                <img src="https://m.media-amazon.com/images/I/71zTiV3-6TL._AC_SY575_.jpg" alt="Comfy Slippers">
+                <p>Stay cozy with our comfy slippers, perfect for any time of the day!</p>
+                <p>₹1870</p>
+                <a href="https://www.amazon.com/RockDove-Womens-Fleece-Closed-Slipper/dp/B09D2NF2ZS/ref=sr_1_8?crid=3T3FBYT3J45GQ&dib=eyJ2IjoiMSJ9.mHV-uOfkqSG8X-eg6HVM-l90FMCFoV5lSSK9VmaBBalmbfypwPyqmSCS8-nC0xye-iXjbmOfgbgL8mYyMdK1zmW9EXDWu5ayNL5mWA5i-Rx7zUpFY5zABSfSgFeDsCFjsuGlW1QsFu7Aavjcuz11G6_tJrrpttH7hboZLgwkQfssg3DdF5OkaxqtDguSA7lksOn9dvb7-ZUtAGPhb9kYBZdH5le-6cfd0GO2ZlEr63rjHkCBdsKwzTtyiP4Vq3OSaYDTPUsGcNHZxQt3CVziB8zoNOkbAF8Z5M7HzJgS8so.uxf4FTeDy_NQUdVG4DGKVACVI0U7_D6Eu0xgFv5teLs&dib_tag=se&keywords=costly+slippers+in+women&qid=1729147188&sprefix=costly+slippers+in+women%2Caps%2C504&sr=8-8" class="buy-button">Buy Now</a>
+            </div>
+            <div class="slipper">
+                <h2>Stylish Slippers</h2>
+                <img src="https://m.media-amazon.com/images/I/71KkpgAM1TL._AC_SX575_.jpg" alt="Stylish Slippers">
+                <p>Step up your style game with our stylish slippers.</p>
+                <p>₹1770</p>
+                <a href="https://www.amazon.com/Vonluxe-Slippers-Bedroom-Outdoor-Grey11-12/dp/B08HD8L2WW/ref=sr_1_4_sspa?crid=TWBAS6VBS1SS&dib=eyJ2IjoiMSJ9.DJPFJ7pUk1MYIEKB1T-KOCI-OGCH6wMhee6Y-_0gT8RurcsRY2idi11aNNByKON0Tkqgkl-jTFouCqynZucFo7fxZB0ytT3v_DtSnBga2K-eXruhiOb9W1qXsgJg8M1nXggkejmiMV6QAVmDYuxxZu38dvQpefQf8AkIPdesof1jS_RoCOS8qxb83wL1kZRHEdJW1hBXh6wTPwuA6nU9qaMSDhx9WMV2ATM6Ngi0pVMIifz0eBOqgR_ehdVuGVwVIbad3yjICDrpU2DaNOFzev13n2pIHjwABS6Ipc8smFU.mE09sk8k24FnqBcxaiYGtGNJGL9E7V-g_lG6CNQbrKI&dib_tag=se&keywords=luxury%2Bslippers%2Bfor%2Bwomen&qid=1729147502&sprefix=Luxury%2BSlippers%2Caps%2C1116&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1" class="buy-button">Buy Now</a>
+            </div>
+            <div class="slipper">
+                <h2>Stylish Slippers</h2>
+                <img src="https://m.media-amazon.com/images/I/71cCSkW0y8L._AC_SY575_.jpg" alt="Stylish Slippers">
+                <p>Step up your style game with our soft and sylish slippers.</p>
+                <p>₹1550</p>
+                <a href="https://www.amazon.com/Womens-Slippers-Outdoor-Breathable-Off-White/dp/B0CF598RKG/ref=sr_1_10?crid=TWBAS6VBS1SS&dib=eyJ2IjoiMSJ9.DJPFJ7pUk1MYIEKB1T-KOCI-OGCH6wMhee6Y-_0gT8RurcsRY2idi11aNNByKON0Tkqgkl-jTFouCqynZucFo7fxZB0ytT3v_DtSnBga2K-eXruhiOb9W1qXsgJg8M1nXggkejmiMV6QAVmDYuxxZu38dvQpefQf8AkIPdesof1jS_RoCOS8qxb83wL1kZRHEdJW1hBXh6wTPwuA6nU9qaMSDhx9WMV2ATM6Ngi0pVMIifz0eBOqgR_ehdVuGVwVIbad3yjICDrpU2DaNOFzev13n2pIHjwABS6Ipc8smFU.mE09sk8k24FnqBcxaiYGtGNJGL9E7V-g_lG6CNQbrKI&dib_tag=se&keywords=luxury%2Bslippers%2Bfor%2Bwomen&qid=1729147502&sprefix=Luxury%2BSlippers%2Caps%2C1116&sr=8-10&th=1" class="buy-button">Buy Now</a>
+            </div>
+            <div class="slipper">
+                <h2>Stylish Slippers</h2>
+                <img src="https://m.media-amazon.com/images/I/71xCKJrNXpL._AC_SY695_.jpg" alt="Stylish Slippers">
+                <p>Step teh slippers and feel it.</p>
+                <p>₹1700</p>
+                <a href="https://www.amazon.com/dp/B086QDMXB8/ref=sspa_dk_detail_3?psc=1&pd_rd_i=B086QDMXB8&pd_rd_w=tl360&content-id=amzn1.sym.7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_p=7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_r=YB11GQTC5NG9463XQYP0&pd_rd_wg=LQjR6&pd_rd_r=7821fcab-cf25-47dc-b61d-03331c6725a8&s=shoes&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw" class="buy-button">Buy Now</a>
+            </div>
+            <div id="more" class="more">
+                <center><b>
+                <a href="https://www.amazon.com/s?k=ugg+slippers+for+women+tasman&adgrpid=1338108052830135&hvadid=83632025472105&hvbmt=bb&hvdev=c&hvlocphy=158258&hvnetw=o&hvqmt=b&hvtargid=kwd-83632804506934&hydadcr=7879_13723872&msclkid=6dd54e28b5db166ed6c729380e7c2dc3&tag=mh0b-20&ref=pd_sl_6hpds9s5ha_b">more slippers </a></b></center>
+            </div>
+        </div>
+        <div id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form action="contact-form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
